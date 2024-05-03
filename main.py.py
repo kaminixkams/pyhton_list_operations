@@ -4,6 +4,9 @@ evennos=[]
 oddnos=[]
 twodigit=[]
 positive=[]
+negative=[]
+print("numbers =",numbers)
+print()
 print("1. Maximin number =",max(numbers))
 print("2. Minimum number =",min(numbers))
 print("3. Sum of the numbers =",sum(numbers))
@@ -22,8 +25,14 @@ for i in numbers:
         twodigit.append(i)
 print("8. Two digit numbers =",str(twodigit).replace("[","").replace("]",""))
 for i in numbers:
-    if i<0:
+    if i>0:
         positive.append(i)
+print("9. Positive number =",str(positive).replace("[","").replace("]",""))
+for i in numbers:
+    if i<0:
+        negative.append(i)
+print("10. Negative number =",str(negative).replace("[","").replace("]",""))
+        
 
         
         
